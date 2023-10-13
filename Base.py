@@ -1,25 +1,17 @@
-# C'est parti
+"""Fichier de démarrage"""
 
-# Rajout de ce commentaire
-
-from flask import Flask
-import webbrowser
-from threading import Timer
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Bonjour, bienvenue sur mon application web !"
-
-def open_browser():
-      webbrowser.open_new('http://127.0.0.1:5000/')
-      
-
+from Monpackage.affich import loadweb
 
 if __name__ == '__main__':
-    Timer(1, open_browser).start()
-    app.run(debug=True)
-    
+    username ="RM"
+    nomsociete = "HVALVES_prod"
+    password = "Regis2022!"
+    url = "https://vnsylob1:8443/rest/login"
+    loadweb.run_server(loadweb.open_browser,loadweb.app)
+
+# httpXlmDoc.open "GET", url, False, login, encodepassword
+# httpXlmDoc.setRequestHeader "content-type", application/x-www-form-urlencoded"
+# httpXlmDoc.send
+
 
 
