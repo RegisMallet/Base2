@@ -7,6 +7,7 @@ if __name__ == '__main__':
     nomsociete = "HVALVES_prod"
     password = "Regis2022!"
     url = "https://vnsylob1:8443/rest/login"
+    
     loadweb.run_server(loadweb.open_browser,loadweb.app)
 
 # httpXlmDoc.open "GET", url, False, login, encodepassword

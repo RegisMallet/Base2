@@ -2,9 +2,6 @@
 import webbrowser
 from threading import Timer
 from flask import Flask
-from Monpackage.request import requete
-#from Monpackage import fit_url
-#from Monpackage.log import log
 
 
 class loadweb(requete):
@@ -13,7 +10,7 @@ class loadweb(requete):
     @app.route('/')
  
     def home():
-        url = "https://vnsylob1:8443/rest/login"
+        global url
         affichage =requete.request_method(url)
         return affichage
 
@@ -21,7 +18,6 @@ class loadweb(requete):
     def open_browser():
         webbrowser.open_new('http://127.0.0.1:5000/')
 
-    def run_server(open_browser,app):
         Timer(1, open_browser).start()
         app.run(debug=True)
 

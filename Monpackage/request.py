@@ -8,11 +8,9 @@ from Monpackage.log import log
 
 class requete(log):
     
-    def __init__(self,url):
-        self.url = url
-    
-    def request_method(self):
-        retour = requests.get(self.url, auth=HTTPBasicAuth(log.requestelement))
+    def request_method():
+        global url 
+        retour = requests.get(url, auth=HTTPBasicAuth(log.requestelement))
         
         return retour.status_code
     #(login, encodpassword))

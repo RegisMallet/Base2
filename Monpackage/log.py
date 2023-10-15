@@ -2,14 +2,12 @@
 
 
 from Monpackage.Encode64 import encodage
-from Monpackage.user import User
 
+class log():
 
-class log(encodage,User):
-    
-    def requestelement(encodage):
-        login = "%CP1252%" & encodage.encod(User.username + "@@" + User.nomsociete + "@@noSession")
-        encodpassword = encodage.encod(User.password)
+    def requestelement(username,nomsociete,password):
+        login = "%CP1252%" & encodage.encod(username + "@@" + nomsociete + "@@noSession")
+        encodpassword = encodage.encod(password)
         return login, encodpassword
     
 
