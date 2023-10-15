@@ -4,7 +4,6 @@ from threading import Timer
 from flask import Flask
 
 
-class loadweb(requete):
     app = Flask(__name__)
 
     @app.route('/')
