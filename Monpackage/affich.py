@@ -2,24 +2,22 @@
 import webbrowser
 from threading import Timer
 from flask import Flask
+from Monpackage import module_globalV
 
+class loadweb():
 
     app = Flask(__name__)
 
     @app.route('/')
- 
-    def home():
-        global url
-        affichage =requete.request_method(url)
-        return affichage
 
+    def home():
+        return module_globalV.ma_variable
 
     def open_browser():
-        webbrowser.open_new('http://127.0.0.1:5000/')
+        #pass
+        webbrowser.open('http://127.0.0.1:5000/')
 
+    def app_run(app,open_browser):
         Timer(1, open_browser).start()
-        app.run(debug=True)
-
-
-#from urllib import response
-#requete,Timer,webbrowser,Flask
+        
+        app.run(debug=True, use_reloader = False)

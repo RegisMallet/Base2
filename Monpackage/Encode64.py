@@ -12,11 +12,15 @@ class encodage():
         """encode une chaine en utf-8."""
         chaine_encodee = base64.b64encode(chaine.encode('utf-8'))
         print(chaine_encodee)  # Affiche : b'QUJDMTIzIQ=='
+        chaine_encodee = chaine_encodee.decode('utf-8')
+        print(chaine_encodee)
+        return chaine_encodee
     
     def decod(chaine):
         """dé-encode une chaine en utf-8."""
         chaine_decodee = base64.b64decode(chaine).decode('utf-8')
         print(chaine_decodee)  # Affiche : ABC123!
+        return chaine_decodee
         
 
 # # Encoder une chaîne de caractères

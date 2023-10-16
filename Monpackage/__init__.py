@@ -1,5 +1,5 @@
 
 
-__all__ = ["affich", "Encode64"]
+__all__ = ["module_globalV","affich", "Encode64","fit_url","request","user","log"]
 
-from Monpackage import*
+#from Monpackage import*

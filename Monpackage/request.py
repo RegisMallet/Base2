@@ -2,15 +2,15 @@
 
 
 import requests
-from requests.auth import HTTPBasicAuth
-from Monpackage.log import log
+#from requests.auth import HTTPBasicAuth
+
 #from Monpackage.fit_url import fit_url
 
-class requete(log):
+class requete():
     
-    def request_method():
-        global url 
-        retour = requests.get(url, auth=HTTPBasicAuth(log.requestelement))
+    def request_method(urlstr,requestlogin):
+        retour = requests.get(urlstr, auth=requestlogin)
+        #retour = requests.get(urlstr, auth=HTTPBasicAuth(requestlogin))
         
         return retour.status_code
     #(login, encodpassword))
