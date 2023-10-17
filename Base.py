@@ -7,8 +7,8 @@ from Monpackage import affich
 
 if __name__ == '__main__':
     username ="RM"
-    nomsociete = "HVALVES_prod"
-    password = "Regis2022!"
+    nomsociete = "HVALV_prod"
+    password = "Regis!"
     url = "https://www.google.fr/"
     
     #urlstr = fitting_url(url)
