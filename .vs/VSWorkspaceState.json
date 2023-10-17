@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Monpackage",
-    "\\obj",
-    "\\obj\\Any CPU",
-    "\\obj\\Any CPU\\Debug",
-    "\\obj\\Debug",
-    "\\__pycache__"
+    ""
   ],
-  "SelectedNode": "\\Monpackage\\request.py",
+  "SelectedNode": "\\Base_H.sln",
   "PreviewInSolutionExplorer": false
 }
