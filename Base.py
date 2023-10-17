@@ -1,7 +1,7 @@
 """Fichier de démarrage"""
 
 from Monpackage.request import requete
-from Monpackage.log import log
+#from Monpackage.log import log
 from Monpackage.variable_a_afficher import vaffich
 from Monpackage import affich
 
@@ -9,8 +9,6 @@ if __name__ == '__main__':
     username ="RM"
     nomsociete = "HVALVES_prod"
     password = "Regis2022!"
-    
-    # url = "https:" "//vnsylob1:8443/rest/login"
     url = "https://www.google.fr/"
     
     #urlstr = fitting_url(url)
